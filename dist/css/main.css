@@ -5,4 +5,68 @@ body {
   height: 100vh;
 }
 
+.nav-center {
+  width: 100%;
+  height: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
+.nav-center .logo {
+  width: 15vw;
+}
+
+.nav-center .nav-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+.nav-center .nav-header .nav-toggle {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.nav-center .nav-header .nav-toggle .fas.fa-bars {
+  color: #9c6e56;
+  font-size: 2em;
+}
+
+.nav-center ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-center ul li {
+  width: 100%;
+  list-style-type: none;
+}
+
+.nav-center ul li a {
+  text-decoration: none;
+}
+
+.nav-center .links,
+.nav-center .social-icons {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
