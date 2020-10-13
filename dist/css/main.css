@@ -20,7 +20,7 @@ body {
 }
 
 .nav-center .logo {
-  width: 15vw;
+  width: 15vmin;
 }
 
 .nav-center .nav-header {
@@ -45,8 +45,8 @@ body {
 }
 
 .nav-center .nav-header .nav-toggle .fas.fa-bars {
-  color: #9c6e56;
-  font-size: 2em;
+  color: #c4a494;
+  font-size: 2.3vw;
 }
 
 .nav-center ul {

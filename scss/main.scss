@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: space-between;
   .logo {
-    width: 15vw;
+    width: 15vmin;
   }
   .nav-header {
     width: 100%;
@@ -27,8 +27,8 @@ body {
       border-radius: 50%;
       padding: 1em;
       .fas.fa-bars {
-        color: #9c6e56;
-        font-size: 2em;
+        color: lighten($color: #9c6e56, $amount: 20%);
+        font-size: 2.3vw;
       }
     }
   }
