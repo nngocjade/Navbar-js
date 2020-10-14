@@ -7,10 +7,9 @@ body {
 
 .nav-center {
   width: 100%;
-  height: 8em;
+  height: fit-content;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   .logo {
     width: 15vmin;
   }
@@ -19,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0 1em 1em 1em;
     .nav-toggle {
       background-color: transparent;
       // border: 1px solid #9C6E56;
@@ -28,7 +27,7 @@ body {
       padding: 1em;
       .fas.fa-bars {
         color: lighten($color: #9c6e56, $amount: 20%);
-        font-size: 2.3vw;
+        font-size: 7vmin;
       }
     }
   }
