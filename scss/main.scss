@@ -1,5 +1,5 @@
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   .logo {
     width: 15vmin;
   }
@@ -44,10 +45,27 @@ body {
       }
     }
   }
-  // .links,
-  // .social-icons {
-  //   // display: none;
-  // }
+  .links, 
+  .social-icons{
+    // display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .links {
+   height: 10em;
+    display: block;
+    
+    padding: 0;
+    background-color: #9c6e56;
+    a{
+     color: white;
+    }
+  }
+  .social-icons{
+    i{
+     color: #9c6e56;
+    }
+  }
 }
 
 @media (min-width: 768px) {
