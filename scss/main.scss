@@ -6,9 +6,10 @@ body {
 }
 
 .nav-center {
-  width: 100%;
+  width: calc(100% - 2em);
   height: fit-content;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   .logo {
     width: 15vmin;
@@ -43,8 +44,23 @@ body {
       }
     }
   }
-  .links,
-  .social-icons {
-    display: none;
+  // .links,
+  // .social-icons {
+  //   // display: none;
+  // }
+}
+
+@media (min-width: 768px) {
+  .nav-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .nav-toggle {
+      display: none;
+    }
+    .links,
+    .social-icons {
+      display: block;
+    }
   }
 }
