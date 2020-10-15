@@ -6,7 +6,7 @@ body {
 }
 
 .nav-center {
-  width: calc(100% - 2em);
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -24,6 +24,7 @@ body {
 
 .nav-center .logo {
   width: 15vmin;
+  margin-left: 0.5em;
 }
 
 .nav-center .nav-header {
@@ -37,7 +38,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 1em 1em 1em;
 }
 
 .nav-center .nav-header .nav-toggle {
@@ -45,6 +45,7 @@ body {
   border: none;
   border-radius: 50%;
   padding: 1em;
+  margin-right: 1em;
 }
 
 .nav-center .nav-header .nav-toggle .fas.fa-bars {
@@ -83,6 +84,10 @@ body {
 
 .nav-center .links a {
   color: white;
+}
+
+.nav-center .social-icons {
+  padding: 0;
 }
 
 .nav-center .social-icons i {
