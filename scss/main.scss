@@ -59,7 +59,7 @@ body {
     text-align: center;
   }
   .links {
-    height: 10em;
+    height: 15em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -67,7 +67,11 @@ body {
     background-color: #9c6e56;
     margin-top: 5.3em;
     a {
-      color: white;
+      color: lighten($color: #9c6e56, $amount: 35%);
+      font-size: 2em;
+      &:hover {
+        color: lighten($color: #9c6e56, $amount: 65%);
+      }
     }
   }
   .social-icons {
