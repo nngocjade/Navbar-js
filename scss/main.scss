@@ -70,7 +70,7 @@ body {
       color: lighten($color: #9c6e56, $amount: 35%);
       font-size: 2em;
       &:hover {
-        color: lighten($color: #9c6e56, $amount: 65%);
+        color: lighten($color: #477155, $amount: 30%);
       }
     }
   }
@@ -112,6 +112,9 @@ body {
       margin: 0 0.5em;
       background-color: transparent;
       font-size: 0.8em;
+      a {
+        color: lighten($color: #9c6e56, $amount: 15%);
+      }
     }
     .social-icons {
       display: none;

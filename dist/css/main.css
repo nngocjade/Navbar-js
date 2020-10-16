@@ -104,7 +104,7 @@ body {
 }
 
 .nav-center .links a:hover {
-  color: white;
+  color: #95bca2;
 }
 
 .nav-center .social-icons {
@@ -167,6 +167,9 @@ body {
     margin: 0 0.5em;
     background-color: transparent;
     font-size: 0.8em;
+  }
+  .nav-center .links a {
+    color: #bb9784;
   }
   .nav-center .social-icons {
     display: none;
