@@ -105,16 +105,29 @@ body {
     .links {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       height: 20vh;
-      width: 40%;
+      width: 50%;
       margin: 0 0.5em;
       background-color: transparent;
       font-size: 0.8em;
     }
     .social-icons {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .social-icons {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 11em !important;
+    height: 5em;
+    i {
+      color: black;
     }
   }
 }
