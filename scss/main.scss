@@ -1,3 +1,5 @@
+$transition: all 0.3s linear;
+
 body {
   margin: 0;
   padding: 0;
@@ -38,6 +40,11 @@ body {
         color: lighten($color: #9c6e56, $amount: 20%);
         font-size: 3em;
       }
+      &:hover {
+        transform: rotate(90deg);
+        transition: $transition;
+        cursor: pointer;
+      }
     }
   }
   ul {
@@ -58,26 +65,37 @@ body {
     width: 100%;
     text-align: center;
   }
+  // BY DEFAULT HIDE LINKS
   .links {
-    height: 15em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0;
-    background-color: #9c6e56;
-    margin-top: 5.3em;
-    a {
-      color: lighten($color: #9c6e56, $amount: 35%);
-      font-size: 2em;
-      &:hover {
-        color: lighten($color: #477155, $amount: 30%);
-      }
-    }
+    height: 0;
+    overflow: hidden;
+    transition: transition;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
+    // padding: 0;
+    // background-color: #9c6e56;
+    // margin-top: 5.3em;
+    // a {
+    //   color: lighten($color: #9c6e56, $amount: 35%);
+    //   font-size: 1.7em;
+    //   text-transform: capitalize;
+    //   &:hover {
+    //     color: lighten($color: #477155, $amount: 30%);
+    //   }
+    // }
+  }
+  // TOGGLE CLASS
+  .show-links {
+    height: 12rem;
   }
   .social-icons {
     padding: 0;
     i {
       color: #9c6e56;
+      &:hover {
+        color: lighten($color: #477155, $amount: 30%);
+      }
     }
   }
 }

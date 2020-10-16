@@ -59,6 +59,14 @@ body {
   font-size: 3em;
 }
 
+.nav-center .nav-header .nav-toggle:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
 .nav-center ul {
   width: 40%;
   display: -webkit-box;
@@ -82,29 +90,16 @@ body {
 }
 
 .nav-center .links {
-  height: 15em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 0;
-  background-color: #9c6e56;
-  margin-top: 5.3em;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: -webkit-transition;
+  transition: -webkit-transition;
+  transition: transition;
+  transition: transition, -webkit-transition;
 }
 
-.nav-center .links a {
-  color: #dfcec5;
-  font-size: 2em;
-}
-
-.nav-center .links a:hover {
-  color: #95bca2;
+.nav-center .show-links {
+  height: 12rem;
 }
 
 .nav-center .social-icons {
@@ -113,6 +108,10 @@ body {
 
 .nav-center .social-icons i {
   color: #9c6e56;
+}
+
+.nav-center .social-icons i:hover {
+  color: #95bca2;
 }
 
 @media (min-width: 768px) {
