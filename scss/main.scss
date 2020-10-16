@@ -86,12 +86,15 @@ body {
   .nav-center {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    background-color: gray;
+    height:5em;
     .nav-header {
-      width: 100vw;
+      width: fit-content;
       z-index: 0;
+      position: relative;
     }
     .nav-toggle {
       display: none;
@@ -104,7 +107,6 @@ body {
       height: 20vh;
       width: 40%;
       margin: 0 0.5em;
-      position: relative;
       background-color: transparent;
       font-size: .8em;
     }

@@ -124,17 +124,22 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: space-evenly;
-        -ms-flex-align: space-evenly;
-            align-items: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
+    background-color: gray;
+    height: 5em;
   }
   .nav-center .nav-header {
-    width: 100vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     z-index: 0;
+    position: relative;
   }
   .nav-center .nav-toggle {
     display: none;
@@ -156,7 +161,6 @@ body {
     height: 20vh;
     width: 40%;
     margin: 0 0.5em;
-    position: relative;
     background-color: transparent;
     font-size: .8em;
   }
