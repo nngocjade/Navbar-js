@@ -6,6 +6,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
+  overflow-y: scroll;
 }
 
 .nav-center {
@@ -95,15 +96,43 @@ body {
     height: 12rem;
     transition: $transition;
   }
-  .social-icons {
-    padding: 0;
-    overflow: hidden;
-    i {
-      color: #9c6e56;
-      &:hover {
-        color: lighten($color: #477155, $amount: 30%);
-      }
+}
+
+.main {
+  width: calc(100% - 4em);
+  margin: auto;
+  height: 70vh;
+  p {
+    margin: 0 4em;
+  }
+}
+
+.social-icons {
+  padding: 0;
+  overflow: hidden;
+  i {
+    color: #9c6e56;
+    &:hover {
+      color: lighten($color: #477155, $amount: 30%);
     }
+  }
+}
+
+.footer {
+  height: 5em;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  li {
+    display: inline-block;
+    margin: 0.5em;
   }
 }
 
