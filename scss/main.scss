@@ -36,6 +36,7 @@ body {
       border-radius: 50%;
       padding: 1em;
       margin-right: 1em;
+      outline: none;
       .fas.fa-bars {
         color: lighten($color: #9c6e56, $amount: 20%);
         font-size: 3em;
@@ -88,6 +89,7 @@ body {
   // TOGGLE CLASS
   .show-links {
     height: 12rem;
+    transition: $transition;
   }
   .social-icons {
     padding: 0;
