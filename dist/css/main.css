@@ -21,6 +21,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
 }
 
 .nav-center .logo {
@@ -65,8 +68,8 @@ body {
 .nav-center .nav-header .nav-toggle:hover {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -111,7 +114,9 @@ body {
           justify-content: space-evenly;
   padding: 0;
   background-color: #9c6e56;
-  margin-top: 5.3em;
+  margin-top: auto;
+  position: fixed;
+  top: 5em;
 }
 
 .nav-center .links a {
@@ -126,8 +131,8 @@ body {
 
 .nav-center .show-links {
   height: 12rem;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-center .social-icons {
@@ -192,11 +197,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 20vh;
+    height: auto;
     width: 50%;
     margin: 0 0.5em;
     background-color: transparent;
     font-size: 0.8em;
+    position: relative;
   }
   .nav-center .links a {
     color: #bb9784;
@@ -218,7 +224,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 11em !important;
-    height: 5em;
+    height: auto;
   }
   .social-icons i {
     color: black;
