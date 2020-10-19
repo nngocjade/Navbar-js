@@ -137,7 +137,7 @@ body {
 
 .nav-center .social-icons {
   padding: 0;
-  display: none;
+  overflow: hidden;
 }
 
 .nav-center .social-icons i {
@@ -203,6 +203,7 @@ body {
     background-color: transparent;
     font-size: 0.8em;
     position: relative;
+    top: 0;
   }
   .nav-center .links a {
     color: #bb9784;

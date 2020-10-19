@@ -97,7 +97,7 @@ body {
   }
   .social-icons {
     padding: 0;
-    display: none;
+    overflow: hidden;
     i {
       color: #9c6e56;
       &:hover {
@@ -139,6 +139,7 @@ body {
       background-color: transparent;
       font-size: 0.8em;
       position: relative;
+      top: 0;
       a {
         color: lighten($color: #9c6e56, $amount: 15%);
       }
