@@ -1,4 +1,6 @@
-$transition: all 0.3s ease-in-out;
+@import "social-icon";
+@import "footer";
+@import "config";
 
 body {
   margin: 0;
@@ -46,7 +48,7 @@ body {
       }
       &:hover {
         transform: rotate(90deg);
-        transition: $transition;
+        @include transition-ease(.5s);
         cursor: pointer;
       }
     }
@@ -73,7 +75,6 @@ body {
   .links {
     height: 0;
     overflow: hidden;
-    transition: transition;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -94,71 +95,16 @@ body {
   // TOGGLE CLASS
   .show-links {
     height: 12rem;
-    transition: $transition;
+    @include transition-ease(.5s);
   }
 }
 
 .main {
-  width: calc(100% - 4em);
-  margin: auto;
+  width: 100vw;
+  margin: 0 auto;
   height: 70vh;
   p {
-    margin: 0 4em;
-  }
-}
-
-.social-icons {
-  padding: 0;
-  overflow: hidden;
-  i {
-    color: #9c6e56;
-    &:hover {
-      color: lighten($color: #477155, $amount: 30%);
-    }
-  }
-}
-
-.footer {
-  height: 4em;
-  width: 15em;
-  // width: 14em;
-  border-radius: 5%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  position: fixed;
-  margin-top: auto;
-  left: -13em;
-  bottom: 5%;
-  background-color: lighten($color: #477155, $amount: 55%);
-  &:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f054";
-    color: lighten($color: #9c6e56, $amount: 30%);
-    text-align: right;
-    position: relative;
-    left: 90%;
-  }
-  &:hover {
-    transform: translateX(13em);
-    width: 13em;
-    transition: all .6s ease-in-out;
-    background-color: lighten($color: #477155, $amount: 40%);
-    &:before {
-      font-size: 1.2em;
-      transition: $transition;
-      color: lighten($color: #9c6e56, $amount: 20%);
-    }
-  }
-  .social-icons {
-    overflow: hidden;
-    li {
-      display: inline-block;
-      margin: 0.5em;
-    }
+    margin: 4em;
   }
 }
 
@@ -212,8 +158,5 @@ body {
     align-items: center;
     width: 11em !important;
     height: auto;
-    i {
-      color: black;
-    }
   }
 }

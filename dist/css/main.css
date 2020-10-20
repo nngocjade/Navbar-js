@@ -1,3 +1,76 @@
+.social-icons {
+  padding: 0;
+  overflow: hidden;
+}
+
+.social-icons i {
+  color: #9c6e56;
+}
+
+.social-icons i:hover {
+  color: #95bca2;
+}
+
+.footer {
+  height: 4em;
+  width: 15em;
+  border-radius: 5%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: fixed;
+  margin-top: auto;
+  left: -13em;
+  top: 50%;
+  background-color: #e3ede7;
+}
+
+.footer:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+  color: #d6c0b5;
+  text-align: right;
+  position: relative;
+  left: 90%;
+}
+
+.footer:hover {
+  -webkit-transform: translateX(13em);
+          transform: translateX(13em);
+  width: 13em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #b4d0bd;
+}
+
+.footer:hover:before {
+  font-size: 1.2em;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  color: #c4a494;
+}
+
+.footer .social-icons {
+  overflow: hidden;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+  margin: 0.5em;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -69,8 +142,8 @@ body {
 .nav-center .nav-header .nav-toggle:hover {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -99,10 +172,6 @@ body {
 .nav-center .links {
   height: 0;
   overflow: hidden;
-  -webkit-transition: -webkit-transition;
-  transition: -webkit-transition;
-  transition: transition;
-  transition: transition, -webkit-transition;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,91 +201,18 @@ body {
 
 .nav-center .show-links {
   height: 12rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .main {
-  width: calc(100% - 4em);
-  margin: auto;
+  width: 100vw;
+  margin: 0 auto;
   height: 70vh;
 }
 
 .main p {
-  margin: 0 4em;
-}
-
-.social-icons {
-  padding: 0;
-  overflow: hidden;
-}
-
-.social-icons i {
-  color: #9c6e56;
-}
-
-.social-icons i:hover {
-  color: #95bca2;
-}
-
-.footer {
-  height: 4em;
-  width: 15em;
-  border-radius: 5%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  position: fixed;
-  margin-top: auto;
-  left: -13em;
-  bottom: 5%;
-  background-color: #e3ede7;
-}
-
-.footer:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f054";
-  color: #d6c0b5;
-  text-align: right;
-  position: relative;
-  left: 90%;
-}
-
-.footer:hover {
-  -webkit-transform: translateX(13em);
-          transform: translateX(13em);
-  width: 13em;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
-  background-color: #b4d0bd;
-}
-
-.footer:hover:before {
-  font-size: 1.2em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #c4a494;
-}
-
-.footer .social-icons {
-  overflow: hidden;
-}
-
-.footer .social-icons li {
-  display: inline-block;
-  margin: 0.5em;
+  margin: 4em;
 }
 
 @media (min-width: 768px) {
@@ -297,9 +293,6 @@ body {
             align-items: center;
     width: 11em !important;
     height: auto;
-  }
-  .social-icons i {
-    color: black;
   }
 }
 /*# sourceMappingURL=main.css.map */
