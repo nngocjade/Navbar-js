@@ -16,6 +16,13 @@ navToggle.addEventListener("click", function(){
  // }else{
  //  links.classList.add("show-links");
  // }
- links.classList.toggle("show-links");
+links.classList.toggle("show-links");
 });
 
+$(document).addEventListener('click', function (e) {
+
+    // If element is opened and click target is outside it, hide it
+    if (links.is(':visible') && !links.is(e.target) && !links.has(e.target).length) {
+        $links.hide();
+    }
+});
